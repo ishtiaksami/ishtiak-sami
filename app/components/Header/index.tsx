@@ -19,7 +19,7 @@ export default function Header() {
 
   const headerClass =
     scrollY > 50
-      ? "py-4 bg-black/80 backdrop-blur-md"
+      ? "py-4 md:bg-black/80 backdrop-blur-md"
       : "py-6 bg-transparent"
 
   return (
@@ -95,9 +95,9 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[72px] left-0 right-0 z-40 bg-black/90 backdrop-blur-md border-b border-gray-800 md:hidden"
+            className="fixed top-[72px] left-0 right-0 z-40 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent cursor-pointer backdrop-blur-md border-b border-gray-800 md:hidden"
           >
-            <div className="container mx-auto px-4 py-6 flex flex-col gap-6">
+            <div className="holder py-6 flex flex-col gap-6 ">
               {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
                 <Link
                   key={item}
@@ -108,7 +108,7 @@ export default function Header() {
                   {item}
                 </Link>
               ))}
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 w-full">
+              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 w-full text-white">
                 Resume
               </Button>
             </div>

@@ -13,7 +13,7 @@ export default function MissionVission() {
                 {/* Subtle Background Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-gray-900 to-gray-950 opacity-30" />
 
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="holder relative z-10">
                     {/* Section Heading */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}

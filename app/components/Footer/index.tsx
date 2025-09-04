@@ -9,11 +9,11 @@ export default function Footer() {
     return (
         <>
             {/* Footer */}
-            <footer className="py-20 relative overflow-hidden bg-gray-900/90 backdrop-blur-sm rounded-t-3xl shadow-inner">
+            <footer className="py-20 relative overflow-hidden bg-gray-950 backdrop-blur-sm md:rounded-t-3xl shadow-inner">
                 {/* Background Glow */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(120,50,255,0.08),transparent_70%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(120,50,255,0.1),transparent_50%)]" />
 
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="holder relative z-10">
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
                         {/* Logo & About */}
                         <div>

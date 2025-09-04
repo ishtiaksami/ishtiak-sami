@@ -22,7 +22,7 @@ export default function HeroBanner() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(0,200,255,0.08),transparent_70%)]" />
         </div>
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="holder relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-20">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
@@ -63,9 +63,9 @@ export default function HeroBanner() {
                 <Image
                   src={"/sami.jpeg"}
                   alt="Ishtiak Sami"
-                  width={150}
-                  height={150}
-                  className="rounded-full object-cover border-4 border-purple-500 mb-6 shadow-xl"
+                  width={176}
+                  height={176}
+                  className="rounded-full w-44 h-44 object-cover border-4 border-purple-500 mb-6 shadow-xl"
                 />
                 <h3 className="text-2xl font-bold text-white">Ishtiak Sami</h3>
                 <p className="text-gray-400 text-sm mt-1">Frontend Developer</p>

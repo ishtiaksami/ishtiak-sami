@@ -10,10 +10,10 @@ export default function Skills() {
     return (
         <>
         {/* Skills Section */}
-      <section id="skills" className="py-24 relative overflow-hidden">
+      <section id="skills" className="py-10 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(120,50,255,0.15),transparent_50%)]" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="holder relative z-10">
           <div className="text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

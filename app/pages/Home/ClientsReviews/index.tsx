@@ -5,11 +5,11 @@ import Image from "next/image"
 
 export default function ClientsReviews() {
   return (
-    <section id="clients-review" className="py-24 relative overflow-hidden">
+    <section id="clients-review" className="py-10 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(120,50,255,0.1),transparent_50%)]" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="holder relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Clients Reviews</h2>

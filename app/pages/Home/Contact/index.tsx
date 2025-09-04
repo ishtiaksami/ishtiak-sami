@@ -14,7 +14,7 @@ export default function Contact() {
     return (
         <>
             {/* Contact Section */}
-            <section id="contact" className="py-24 relative overflow-hidden bg-gray-950">
+            <section id="contact" className="py-16 relative overflow-hidden bg-gray-950">
                 {/* Background Glow */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(120,50,255,0.1),transparent_50%)]" />
 
