@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.holder {
+  @apply max-w-[1512px] mx-auto px-6 md:px-10;
+}
