@@ -1,7 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import React from "react"
+import { motion } from "framer-motion"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Projects() {
 
@@ -30,7 +32,7 @@ export default function Projects() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
-                                img: "/placeholder.jpg",
+                                img: "/plantriverside.png",
                                 title: "Plant Riverside",
                                 description:
                                     "An elegant website showcasing the vibrant Plant Riverside District, featuring dining, entertainment, shopping, and events in Savannah.",
@@ -38,14 +40,14 @@ export default function Projects() {
                             }
                             ,
                             {
-                                img: "https://scamwatch.ai/wp-content/uploads/2024/11/image4.jpg",
+                                img: "/scamwatch.png",
                                 title: "Scam Watch",
                                 description:
                                     "A WhatsApp-like chat app built with PHP and Tailwind CSS, featuring real-time messaging and online status.",
                                 link: "https://scamwatch.ai",
                             },
                             {
-                                img: "/placeholder.jpg",
+                                img: "/ishtiak.png",
                                 title: "Portfolio Website",
                                 description:
                                     "A sleek and interactive personal portfolio showcasing creative projects, built with React and Tailwind.",
@@ -62,22 +64,24 @@ export default function Projects() {
                                 <div className="h-full bg-gradient-to-b from-gray-900 to-gray-950 p-[1px] rounded-xl">
                                     <div className="h-full bg-gradient-to-b from-gray-900 to-gray-950 p-6 rounded-xl border border-gray-800/50 hover:border-purple-500/50 transition-colors backdrop-blur-sm">
                                         <div className="mb-4 overflow-hidden rounded-lg">
-                                            <img
+                                            <Image
                                                 src={project.img}
                                                 alt={project.title}
+                                                width={400}
+                                                height={250}
                                                 className="rounded-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
                                             />
                                         </div>
                                         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                                         <p className="text-gray-400 mb-4">{project.description}</p>
-                                        <a
+                                        <Link
                                             href={project.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="inline-block text-purple-400 hover:text-purple-300 font-medium"
                                         >
                                             View Project →
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </motion.div>

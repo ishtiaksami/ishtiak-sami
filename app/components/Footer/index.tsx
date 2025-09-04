@@ -1,7 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { ArrowRight, CheckCircle, Code, Cpu, Github, Globe, Menu, MessageSquare, Twitter, X, Linkedin, Mail, Facebook } from "lucide-react"
+import { Cpu, Github, Twitter, Linkedin, Mail} from "lucide-react"
 
 
 export default function Footer() {

@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { ArrowRight, CheckCircle, Code, Cpu, Github, Globe, Menu, MessageSquare, Twitter, X, Linkedin, Mail, Facebook } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+import { CheckCircle } from "lucide-react"
+import { motion} from "framer-motion"
+import Image from "next/image"
 
 export default function Skills() {
 
@@ -62,7 +62,7 @@ export default function Skills() {
               >
                 <div className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-lg">
                   <div className="relative h-[300px] md:h-[400px] w-full rounded-lg flex items-center justify-center">
-                    <img src="https://clarusway.com/wp-content/uploads/2021/06/9-essential-front-end-developer-skills-1024x511.jpg" alt="Frontend Skills" className="w-full h-full object-cover" />
+                    <Image src="/placeholder.jpg" alt="Frontend Skills" width={300} height={400} className="w-full h-full object-cover" />
                   </div>
                 </div>
               </motion.div>
@@ -102,7 +102,7 @@ export default function Skills() {
               >
                 <div className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-lg">
                   <div className="relative h-[300px] md:h-[400px] w-full rounded-lg flex items-center justify-center">
-                    <img src="https://www.wpexplorer.com/wp-content/uploads/beginner-dev-skills.png" alt="Backend Skills" className="w-full h-full object-cover" />
+                    <Image src="/placeholder.jpg" alt="Backend Skills"  width={300} height={400} className="w-full h-full object-cover" />
                   </div>
                 </div>
               </motion.div>
@@ -142,7 +142,7 @@ export default function Skills() {
               >
                 <div className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-lg">
                   <div className="relative h-[300px] md:h-[400px] w-full rounded-lg flex items-center justify-center">
-                    <img src="/placeholder.jpg" alt="Tools Skills" className="h-full w-full object-cover" />
+                    <Image src="/placeholder.jpg" alt="Tools Skills"  width={300} height={400} className="h-full w-full object-cover" />
                   </div>
                 </div>
               </motion.div>

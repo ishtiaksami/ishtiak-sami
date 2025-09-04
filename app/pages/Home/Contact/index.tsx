@@ -1,13 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { ArrowRight, CheckCircle, Code, Cpu, Github, Globe, Menu, MessageSquare, Twitter, X, Linkedin, Mail, Facebook } from "lucide-react"
+import React from "react"
+import { Github,Linkedin, Facebook } from "lucide-react"
 import Link from "next/link"
 import { Input } from "@/app/components/Input/input"
 import { Button } from "@/app/components/Btn/Button"
 
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 export default function Contact() {
 
 

@@ -83,13 +83,13 @@ export default function Pricing() {
                   className={`bg-gradient-to-r ${plan.bgColor} p-6 flex items-center gap-4`}
                 >
                   <div className="flex-shrink-0 w-16 h-16">
-                    {/* <Image
+                    <Image
                       src={plan.icon}
                       alt={plan.package}
                       width={64}
                       height={64}
                       className="h-full w-full object-contain"
-                    /> */}
+                    />
                   </div>
                   <div>
                     <h4 className="text-white font-bold text-2xl">

@@ -19,7 +19,7 @@ export default function Header() {
 
   const headerClass =
     scrollY > 50
-      ? "py-4 bg-black/80 backdrop-blur-md border-b border-gray-800/50"
+      ? "py-4 bg-black/80 backdrop-blur-md"
       : "py-6 bg-transparent"
 
   return (

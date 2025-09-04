@@ -1,9 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import React from "react"
+import Image from "next/image"
 import { Button } from "@/app/components/Btn/Button"
-import { ArrowRight, CheckCircle, Code, Cpu, Github, Globe, Menu, MessageSquare, Twitter, X, Linkedin, Mail, Facebook } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+import { ArrowRight } from "lucide-react"
+import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function HeroBanner() {
 
@@ -58,10 +60,12 @@ export default function HeroBanner() {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/30 via-pink-500/20 to-cyan-500/20 rounded-3xl blur-3xl transition-all duration-500 group-hover:blur-4xl" />
               <div className="relative bg-gray-900/60 backdrop-blur-lg border border-gray-800/40 rounded-3xl overflow-hidden shadow-2xl shadow-purple-900/40 p-8 flex flex-col items-center hover:scale-105 transition-transform duration-500">
-                <img
-                  src="/sami.jpeg"
+                <Image
+                  src={"/sami.jpeg"}
                   alt="Ishtiak Sami"
-                  className="w-44 h-44 rounded-full object-cover border-4 border-purple-500 mb-6 shadow-xl"
+                  width={150}
+                  height={150}
+                  className="rounded-full object-cover border-4 border-purple-500 mb-6 shadow-xl"
                 />
                 <h3 className="text-2xl font-bold text-white">Ishtiak Sami</h3>
                 <p className="text-gray-400 text-sm mt-1">Frontend Developer</p>
@@ -107,14 +111,14 @@ export default function HeroBanner() {
                 asChild
                 className="mt-6 bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white px-8 py-3 rounded-full text-sm font-semibold shadow-xl shadow-purple-900/40 hover:shadow-purple-900/60 transition-all duration-300"
               >
-                <a
+                <Link passHref
                   href="https://www.canva.com/design/DAGNPzQw4n8/gji3hrhPNF2q0w_bbOiFVA/view?utm_content=DAGNPzQw4n8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb6b380d446"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Download Resume
                   <ArrowRight className="ml-2 h-4 w-4 inline" />
-                </a>
+                </Link>
               </Button>
             </motion.div>
           </div>
