@@ -86,7 +86,7 @@ export default function Footer() {
                     {/* Bottom Bar */}
                     <div className="mt-16 pt-8 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-sm">
-                            &copy; {new Date().getFullYear()} <a href="https://ishtiaksami.github.io" className="text-purple-400 hover:text-purple-500 transition-colors">Ishtiak Sami.</a> All rights reserved.
+                            &copy; {new Date().getFullYear()} <a href="https:/ishtiak-five.vercel.app" className="text-purple-400 hover:text-purple-500 transition-colors">Ishtiak Sami.</a> All rights reserved.
                         </p>
                         <div className="flex gap-6">
                             {["Privacy Policy", "Terms", "Contact"].map((item) => (

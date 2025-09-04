@@ -10,7 +10,7 @@ export default function Pricing() {
       package: "Starter Website",
       amount: "$499",
       features: ["Up to 5 pages", "Responsive Design", "Basic SEO"],
-      icon: "",
+      icon: "/images/starter.png", // ✅ Add your own image (inside public/images)
       bgColor: "from-purple-600 to-indigo-600",
       btnColor: "from-purple-600 to-indigo-600",
     },
@@ -23,7 +23,7 @@ export default function Pricing() {
         "Contact Form",
         "Responsive Design",
       ],
-      icon: "",
+      icon: "/images/business.png",
       bgColor: "from-indigo-500 to-blue-500",
       btnColor: "from-indigo-500 to-blue-500",
     },
@@ -37,11 +37,14 @@ export default function Pricing() {
         "SEO & Performance Optimized",
         "Premium Support",
       ],
-      icon: "",
+      icon: "/images/elite.png",
       bgColor: "from-purple-700 to-pink-600",
       btnColor: "from-purple-700 to-pink-600",
     },
   ]
+
+  // ✅ fallback image if missing
+  const fallbackIcon = "/images/default-icon.png"
 
   return (
     <section id="pricing" className="py-24 relative overflow-hidden bg-gray-950">
@@ -84,7 +87,7 @@ export default function Pricing() {
                 >
                   <div className="flex-shrink-0 w-16 h-16">
                     <Image
-                      src={plan.icon}
+                      src={plan.icon || fallbackIcon} // ✅ safe fallback
                       alt={plan.package}
                       width={64}
                       height={64}
