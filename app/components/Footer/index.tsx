@@ -1,10 +1,10 @@
 "use client"
 
-import { Cpu, Github, Twitter, Linkedin, Mail} from "lucide-react"
+import { Cpu, Github, Twitter, Linkedin, Mail } from "lucide-react"
 
 
 export default function Footer() {
-    
+
 
     return (
         <>

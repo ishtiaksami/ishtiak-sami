@@ -34,7 +34,6 @@ export default function Header() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex items-center gap-2"
         >
           <span className="font-extrabold text-2xl tracking-tight bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent cursor-pointer">
             Ishtiak Sami
@@ -74,7 +73,7 @@ export default function Header() {
             variant="outline"
             className="hidden md:flex border-purple-500 text-purple-400 hover:bg-purple-900/30 hover:text-white transition-all"
           >
-            Login / Register
+            Resume
           </Button>
           <Button
             variant="ghost"
